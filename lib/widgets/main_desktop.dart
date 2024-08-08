@@ -45,20 +45,11 @@ class MainDesktop extends StatelessWidget {
               )
             ],
           ),
-          ShaderMask(
-            shaderCallback: (bounds) {
-              return LinearGradient(colors: [
-                CustomColor.scaffoldBg.withOpacity(0.4),
-                CustomColor.scaffoldBg.withOpacity(0.4)
-              ]).createShader(bounds);
-            },
-            blendMode: BlendMode.srcATop,
-            child: Image.asset(
-              'assets/images/kavinkumar.png',
-              height: 250,
-              width: screenWidth / 2,
-            ),
-          )
+          Image.asset(
+            'assets/images/kavinkumar.png',
+            height: 250,
+            width: screenWidth / 2,
+          ),
         ],
       ),
     );

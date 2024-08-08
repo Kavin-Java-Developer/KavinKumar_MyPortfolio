@@ -18,20 +18,13 @@ class MainMobile extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           //avatar image
-          ShaderMask(
-            shaderCallback: (bounds) {
-              return LinearGradient(colors: [
-                CustomColor.scaffoldBg.withOpacity(0.4),
-                CustomColor.scaffoldBg.withOpacity(0.4)
-              ]).createShader(bounds);
-            },
-            blendMode: BlendMode.srcATop,
-            child: Image.asset(
-              'assets/images/kavinkumar.png',
-              width: screenWidth,
-              height: 200,
-            ),
+
+          Image.asset(
+            'assets/images/kavinkumar.png',
+            width: screenWidth,
+            height: 200,
           ),
+
           SizedBox(
             height: 50,
           ),
